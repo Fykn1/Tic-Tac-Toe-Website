@@ -1,6 +1,7 @@
 body {
   background-color: rgb(0, 0, 15);
   color: rgb(255, 255, 255);
+  cursor: default;
 }
 
 h1 {
@@ -20,11 +21,12 @@ h2 {
 
 img {
   height: max(18vw, 13rem);
+  margin-top: min(1vh, .4rem);
   cursor: pointer;
 }
 
 img:hover {
-  height: max(20vw, 15rem);
+  transform: scale(1.2, 1.2);
 }
 
 #jogos {
