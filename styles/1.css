@@ -11,3 +11,23 @@ h1 {
   text-align: center;
   margin-top: max(8vh, 1rem);
 }
+
+main {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-top: 6rem;
+}
+
+.rows {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-self: center;
+}
+
+.tiles {
+  background-color: red;
+  height: 80px;
+  width: 80px;
+  border-color: white;
+}
