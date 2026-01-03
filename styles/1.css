@@ -49,3 +49,7 @@ button {
   width: max(6vw, 6rem);
   border: none;
 }
+
+.tiles:hover {
+  background-color: rgb(255, 170, 170)
+}
