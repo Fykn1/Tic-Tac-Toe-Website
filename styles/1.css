@@ -1,6 +1,8 @@
 body {
   background-color: rgb(0, 0, 15);
   color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
   cursor: default;
 }
 
@@ -15,7 +17,7 @@ h1 {
 main {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 1.5rem;
+  gap: max(1.5vw, 1.5rem);
   align-items: center;
   margin-top: max(8vw, 8rem);
 }
@@ -37,6 +39,8 @@ svg {
 }
 
 button {
+  margin: 0;
+  padding: 0;
   cursor: pointer;
 }
 
@@ -44,15 +48,15 @@ button {
   width: fit-content;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1.7rem;
+  gap: max(2vw, 2rem);
   justify-self: center;
   z-index: 1;
 }
 
 .tiles {
   background-color: rgb(0, 0, 15);
-  height: max(4.5vw, 4.5rem);
-  width: max(4.5vw, 4.5rem);
+  height: max(4.3vw, 4.5rem);
+  width: max(4.3vw, 4.5rem);
   border: none;
   transition: background-color .3s;
 }
