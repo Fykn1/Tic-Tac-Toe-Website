@@ -15,19 +15,25 @@ h1 {
 main {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: .5rem;
+  gap: 1.5rem;
   align-items: center;
   margin-top: max(8vw, 8rem);
 }
 
 svg {
-  background-color: aqua;
+  background-color: rgb(0, 0, 15);
   height: max(20vw, 20rem);
   width: max(20vw, 20rem);
   position: absolute;
   left: 50%;
   translate: -50%;
   z-index: 0;
+}
+
+.table {
+  stroke: white;
+  stroke-width: max(1vw, 1rem);
+  fill: none;
 }
 
 button {
@@ -38,18 +44,15 @@ button {
   width: fit-content;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: .5rem;
+  gap: 1.7rem;
   justify-self: center;
   z-index: 1;
 }
 
 .tiles {
-  background-color: red;
-  height: max(6vw, 6rem);
-  width: max(6vw, 6rem);
+  background-color: rgb(0, 0, 15);
+  height: max(4.5vw, 4.5rem);
+  width: max(4.5vw, 4.5rem);
   border: none;
-}
-
-.tiles:hover {
-  background-color: rgb(255, 170, 170)
+  transition: background-color .3s;
 }
