@@ -22,15 +22,31 @@ main {
   margin-top: max(8vw, 8rem);
 }
 
-.table-column {
+.table-column-top {
   background-color: rgb(255, 255, 255);
-  height:  max(4.5vw, 4.5rem);
-  width: max(1.2vw, 1.2rem);
+  height:  max(5.5vw, 5.5rem);
+  width: max(1.1vw, 1.1rem);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.table-column-middle {
+  background-color: rgb(255, 255, 255);
+  height:  max(5.5vw, 5.5rem);
+  width: max(1.1vw, 1.1rem);
+}
+
+.table-column-bottom {
+  background-color: rgb(255, 255, 255);
+  height:  max(5.5vw, 5.5rem);
+  width: max(1.1vw, 1.1rem);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .table-row {
   background-color: rgb(255, 255, 255);
-  height: max(1.2vw, 1.2rem);
+  height: max(1vw, 1rem);
   width: max(18vw, 18rem);
   border-radius: 10px;
 }
@@ -46,15 +62,17 @@ button {
   display: grid;
   grid-template-columns: repeat(5, auto);
   justify-self: center;
+  align-items: center;
   z-index: 1;
 }
 
 .tiles {
-  background-color: red;
-  color: white;
-  height: max(4.5vw, 4.5rem);
-  width: max(4.5vw, 4.5rem);
+  background-color: rgb(0, 0, 15);
+  color: rgb(255, 255, 255);
+  height: max(4.8vw, 4.8rem);
+  width: max(4.8vw, 4.8rem);
   font-size: max(4vw, 4rem);
   border: none;
+  border-radius: 100%;
   transition: background-color .3s;
 }
