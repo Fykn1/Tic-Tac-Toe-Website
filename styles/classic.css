@@ -16,26 +16,23 @@ h1 {
 
 main {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: max(1.5vw, 1.5rem);
+  grid-template-rows: auto;
+  justify-content: center;
   align-items: center;
   margin-top: max(8vw, 8rem);
 }
 
-svg {
-  background-color: rgb(0, 0, 15);
-  height: max(20vw, 20rem);
-  width: max(20vw, 20rem);
-  position: absolute;
-  left: 50%;
-  translate: -50%;
-  z-index: 0;
+.table-column {
+  background-color: rgb(255, 255, 255);
+  height:  max(4.5vw, 4.5rem);
+  width: max(1.2vw, 1.2rem);
 }
 
-.table {
-  stroke: white;
-  stroke-width: max(1vw, 1rem);
-  fill: none;
+.table-row {
+  background-color: rgb(255, 255, 255);
+  height: max(1.2vw, 1.2rem);
+  width: max(18vw, 18rem);
+  border-radius: 10px;
 }
 
 button {
@@ -47,16 +44,17 @@ button {
 .rows {
   width: fit-content;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: max(2vw, 2rem);
+  grid-template-columns: repeat(5, auto);
   justify-self: center;
   z-index: 1;
 }
 
 .tiles {
-  background-color: rgb(0, 0, 15);
-  height: max(4.3vw, 4.5rem);
-  width: max(4.3vw, 4.5rem);
+  background-color: red;
+  color: white;
+  height: max(4.5vw, 4.5rem);
+  width: max(4.5vw, 4.5rem);
+  font-size: max(4vw, 4rem);
   border: none;
   transition: background-color .3s;
 }
