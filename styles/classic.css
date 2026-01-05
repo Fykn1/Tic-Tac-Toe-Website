@@ -78,8 +78,6 @@ button p {
   font-size: max(4vw, 4rem);
   border: none;
   border-radius: 100%;
-  display: -webkit-flex;
-  display: -moz-flex;
   display: flex;
   justify-content: center;
   padding: 0;
