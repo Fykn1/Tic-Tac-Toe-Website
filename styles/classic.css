@@ -61,7 +61,6 @@ button p {
   font-family: quicksand;
   font-weight: 1000;
   margin: 0;
-  padding: 0;
 }
 
 .rows {
@@ -69,8 +68,6 @@ button p {
   display: grid;
   grid-template-columns: repeat(5, auto);
   justify-self: center;
-  align-items: center;
-  align-content: center;
 }
 
 .tiles {
@@ -81,6 +78,10 @@ button p {
   font-size: max(4vw, 4rem);
   border: none;
   border-radius: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  justify-content: center;
   padding: 0;
 }
 
