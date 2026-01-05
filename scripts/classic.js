@@ -1,15 +1,15 @@
-const tiles = document.querySelectorAll(".tiles");
+const tile = document.querySelectorAll(".tiles");
 
-tiles[0].addEventListener("click", () => play(0));
-tiles[1].addEventListener("click", () => play(1));
-tiles[2].addEventListener("click", () => play(2));
-tiles[3].addEventListener("click", () => play(3));
-tiles[4].addEventListener("click", () => play(4));
-tiles[5].addEventListener("click", () => play(5));
-tiles[6].addEventListener("click", () => play(6));
-tiles[7].addEventListener("click", () => play(7));
-tiles[8].addEventListener("click", () => play(8));
+tile[0].addEventListener("click", () => play(0));
+tile[1].addEventListener("click", () => play(1));
+tile[2].addEventListener("click", () => play(2));
+tile[3].addEventListener("click", () => play(3));
+tile[4].addEventListener("click", () => play(4));
+tile[5].addEventListener("click", () => play(5));
+tile[6].addEventListener("click", () => play(6));
+tile[7].addEventListener("click", () => play(7));
+tile[8].addEventListener("click", () => play(8));
 
 function play(i) {
-  console.log("tile ", i);
+  tile[i].classList.add()
 }
