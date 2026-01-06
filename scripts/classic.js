@@ -11,5 +11,7 @@ tile[7].addEventListener("click", () => play(7));
 tile[8].addEventListener("click", () => play(8));
 
 function play(i) {
-  tile[i].classList.add()
+  let x = document.querySelector(".x");
+  x.classList.add("played");
+  console.log(x);
 }
