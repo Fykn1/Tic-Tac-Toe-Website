@@ -19,6 +19,7 @@ function play(i) {
   } else {
     btn.innerHTML = `<p>X</p>`;
   }
+  btn.classList.add("disabled");
 }
 
 let turn = 1;
@@ -31,4 +32,8 @@ function is_player1() {
   turn++;
 
   return is_player1;
+}
+
+function winner() {
+
 }
