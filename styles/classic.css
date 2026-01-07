@@ -57,7 +57,7 @@ button {
 button p {
   height: fit-content;
   width: fit-content;
-  font-size: 0;
+  font-size: max(4.5vw, 4.5rem);
   font-family: quicksand;
   font-weight: 1000;
   margin: 0;
@@ -81,12 +81,4 @@ button p {
   display: flex;
   justify-content: center;
   padding: 0;
-}
-
-.x {
-  font-size: 0rem;
-}
-
-.o {
-  font-size: max(4.5vw, 4.5rem);
 }
